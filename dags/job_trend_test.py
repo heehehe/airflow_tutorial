@@ -21,7 +21,7 @@ seoul_time = pendulum.timezone('Asia/Seoul')
 
 
 with DAG(
-    dag_id='job_trend_daily',
+    dag_id='job_trend_daily_test',
     default_args=DEFAULT_ARGS,
     schedule_interval='@daily',
     start_date=datetime(2023, 11, 11, 2, 00, tzinfo=seoul_time)
